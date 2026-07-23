@@ -20,7 +20,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
@@ -37,6 +37,22 @@
             margin-bottom: 10px;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
             letter-spacing: 2px;
+        }
+
+        @media (min-width: 1024px) {
+            header h1 {
+                font-size: 4rem;
+                margin-bottom: 15px;
+            }
+
+            header p {
+                font-size: 1.4rem;
+            }
+
+            .menu-title {
+                font-size: 2.3rem;
+                margin-bottom: 40px;
+            }
         }
 
         header p {
@@ -67,9 +83,15 @@
 
         .prizes-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
             margin-bottom: 40px;
+        }
+
+        @media (min-width: 1200px) {
+            .prizes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .prize-card {
@@ -121,6 +143,26 @@
             word-break: break-word;
         }
 
+        @media (min-width: 1024px) {
+            .prize-card {
+                padding: 40px;
+            }
+
+            .prize-card h3 {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+
+            .prize-card p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+            }
+
+            .prize-emoji {
+                font-size: 3rem;
+            }
+        }
+
         .prize-card p {
             font-size: 1rem;
             color: #666;
@@ -170,49 +212,103 @@
             border-left: 4px solid #7dd3fc;
         }
 
+        @media (min-width: 1024px) {
+            .leader-section {
+                padding: 50px;
+            }
+
+            .leader-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .leader-name {
+                font-size: 1.4rem;
+            }
+
+            .leader-message {
+                font-size: 1.2rem;
+                padding: 30px;
+            }
+        }
+
         .placeholder {
             color: #999;
         }
 
         /* レスポンシブ */
         @media (max-width: 768px) {
+            header {
+                margin-bottom: 40px;
+            }
+
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
+                margin-bottom: 12px;
             }
 
             header p {
-                font-size: 1.1rem;
+                font-size: 1.15rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
             }
 
             .menu-title {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
+                margin-bottom: 30px;
+                padding-bottom: 15px;
             }
 
             .prizes-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 22px;
+                margin-bottom: 35px;
             }
 
             .prize-card {
-                padding: 20px;
-            }
-
-            .prize-card h3 {
-                font-size: 1.4rem;
-            }
-
-            .leader-section {
                 padding: 25px;
             }
 
+            .prize-card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 12px;
+            }
+
+            .prize-card p {
+                font-size: 1.05rem;
+            }
+
+            .prize-emoji {
+                font-size: 2.2rem;
+            }
+
+            .leader-section {
+                padding: 35px;
+                margin-bottom: 30px;
+            }
+
             .leader-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .leader-name {
                 font-size: 1.3rem;
+            }
+
+            .leader-message {
+                font-size: 1.1rem;
+                padding: 22px;
             }
         }
 
         @media (max-width: 480px) {
             body {
-                padding: 15px;
+                padding: 12px;
+            }
+
+            header {
+                margin-bottom: 35px;
             }
 
             header h1 {
@@ -228,9 +324,14 @@
                 font-size: 0.9rem;
             }
 
+            .menu-section {
+                margin-bottom: 35px;
+            }
+
             .menu-title {
                 font-size: 1.3rem;
                 margin-bottom: 20px;
+                padding-bottom: 12px;
             }
 
             .prizes-grid {
@@ -243,14 +344,29 @@
 
             .prize-card h3 {
                 font-size: 1.2rem;
+                margin-bottom: 8px;
             }
 
             .prize-emoji {
                 font-size: 2rem;
             }
 
+            .prize-card p {
+                font-size: 0.95rem;
+            }
+
             .leader-section {
                 padding: 18px;
+                margin-bottom: 25px;
+            }
+
+            .leader-section h2 {
+                font-size: 1.2rem;
+            }
+
+            .leader-message {
+                font-size: 1rem;
+                padding: 15px;
             }
         }
 
@@ -352,9 +468,8 @@
 
         <!-- フッター -->
         <footer>
-            <p>フェスティバルをもっと知ろう 👇</p>
-            <a href="index.html" class="back-link">← フェスティバルホームへ</a>
-            <p style="margin-top: 20px;">N高キャンパスフェスティバル 2026</p>
+            <a href="https://enube1115.github.io/Ncanfes-hakataminami-2026/" class="back-link">← 本サイトに戻る</a>
+            <p style="margin-top: 40px;">N高キャンパスフェスティバル 2026</p>
         </footer>
     </div>
 </body>
